@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./assets/logo.png">
+    <title>Premium Plans</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: black;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            width: 80%;
+            margin: 50px auto;
+            text-align: center;
+        }
+
+        h1 {
+            color: white;
+            margin-bottom: 30px;
+        }
+
+        .plans {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+
+        .plan {
+            background: #5f63605d;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            margin: 10px;
+            width: 250px;
+            border: 1x solid;
+            transition: transform 0.3s;
+        }
+
+        .plan:hover {
+            transform: scale(1.05);
+            border: 2px solid #9ac71f;
+        }
+
+
+        h2 {
+            color: #5cb85c;
+        }
+
+        .price {
+            font-size: 24px;
+            color: white;
+            margin: 10px 0;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        ul li {
+            margin: 10px 0;
+            color: white;
+        }
+
+        .logo {
+            display: flex;
+            color: white;
+            align-items: center;
+            padding: 5px;
+        }
+
+        .logo h3 {
+            padding-left: 8px;
+        }
+
+        .logo a {
+            text-decoration: none;
+            color: white;
+            display: flex;
+            align-items: center;
+        }
+
+        button {
+            padding: 10px;
+            background-color: #254e01;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        button:hover {
+            background-color: #308300;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="logo"> <a href="index.html"><img src="./assets/logo.png" alt="" height="40px" width="40px">
+            <h3>Muscify</h3>
+        </a> </div>
+    <div class="container">
+        <h1>Choose Your Premium Plan</h1>
+        <div class="plans">
+            <div class="plan">
+                <h2>Basic Plan</h2>
+                <p class="price">$9.99/month</p>
+                <ul>
+                    <li>Access to basic features</li>
+                    <li>Standard support</li>
+                    <li>1 device</li>
+                </ul>
+                <a href="index.html"> <button>Choose Plan</button></a>
+            </div>
+            <div class="plan featured">
+                <h2>Standard Plan</h2>
+                <p class="price">$19.99/month</p>
+                <ul>
+                    <li>Access to all features</li>
+                    <li>Priority support</li>
+                    <li>Up to 3 devices</li>
+                </ul>
+                <a href="index.html"> <button>Choose Plan</button></a>
+            </div>
+            <div class="plan">
+                <h2>Premium Plan</h2>
+                <p class="price">$29.99/month</p>
+                <ul>
+                    <li>Access to all features</li>
+                    <li>24/7 support</li>
+                    <li>Unlimited devices</li>
+                </ul>
+                <a href="index.html"> <button>Choose Plan</button></a>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

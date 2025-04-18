@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Playlist</title>
+    
+    <link rel="icon" href="./assets/logo.png">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #000000;
+            margin: 0;
+            padding: 0;
+        }
+
+        .logo {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+        }
+
+        .logo a {
+            margin-left: 5px;
+            display: flex;
+            align-items: center;
+            padding: 0%;
+        }
+
+        a {
+            text-decoration: none;
+            color: white;
+        }
+
+        .logo h3 {
+            padding-left: 14px;
+            cursor: context-menu;
+        }
+
+        .container {
+            width: 35%;
+            height: 400px;
+            margin: 50px auto;
+            background: #5f63605d;
+            padding: 20px;
+            border-radius: 5px;
+            color: white;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            text-align: center;
+            color: white;
+        }
+
+        .form-group {
+            margin-bottom: 15px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+            color: white;
+        }
+
+        input[type="text"],
+        select {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+
+        button {
+            width: 100%;
+            padding: 10px;
+            background-color:#254e01;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+        
+        button:hover {
+            background-color: #308300;
+        }
+
+        .song-list {
+            margin-top: 20px;
+        }
+
+        .song-item {
+            background-color: #e9ecef;
+            padding: 10px;
+            margin: 5px 0;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="logo">
+        <a href="index.html"><img src="./assets/logo.png" alt="" height="40px" width="40px">
+            <h3>Muscify</h3>
+        </a>
+    </div>
+    <div class="container">
+        <h1>Create Playlist</h1>
+        <form action="#" method="post">
+            <div class="form-group">
+                <label for="playlist-name">Playlist Name:</label>
+                <input type="text" id="playlist-name" name="playlist-name" required>
+            </div>
+            <div class="form-group">
+                <label for="song-select">Select a Song:</label>
+                <select id="song-select" required>
+                    <option value="" disabled selected>--Select a Song--</option>
+                    <option value="Aaye ho meri Jindagi main">Aaye ho meri Jindagi main</option>
+                    <option value="Kitna Pyara Tujhe Rab Ne Banaya">Kitna Pyara Tujhe Rab Ne Banaya</option>
+                    <option value="Ladki badi anjani hain">Ladki badi anjani hain</option>
+                    <option value="Mera Dil Bhi Kitna Pagal hai">Mera Dil Bhi Kitna Pagal hai</option>
+                    <option value="Meri Mehbooba">Meri Mehbooba</option>
+                    <option value="Pehla Nasha">Pehla Nasha</option>
+                    <option value="Tip Tip Barsa Pani">Tip Tip Barsa Pani</option>
+                    <option value="Tumsa Koi Pyara">Tumsa Koi Pyara</option>
+                    <option value="Meri Mehbooba">Meri Mehbooba</option>
+                    <option value="Dekha hain Pehli Bar">Dekha hain Pehli Bar</option>
+                    <option value="Raja Ko Rani se">Raja Ko Rani se</option>
+                </select>
+            </div>
+            <button type="button" id="add-song">Add Song</button>
+            <div id="song-list" class="song-list"></div>
+           <button type="submit"> <a href="index.html">Create Playlist</a></button>
+        </form>
+    </div>
+
+    <script>
+        document.getElementById('add-song').addEventListener('click', function () {
+            let songSelect = document.getElementById('song-select');
+            let selectedSong = songSelect.value;
+
+            if (selectedSong) {
+                let songList = document.getElementById('song-list');
+                let songItem = document.createElement('div');
+                songItem.className = 'song-item';
+                songItem.textContent = selectedSong;
+                songList.appendChild(songItem);
+                songSelect.value = '';
+            } else {
+                songSelect.style.borderColor = 'red';
+                alert('Please select a song.');
+            }
+        });
+    </script>
+</body>
+
+</html>

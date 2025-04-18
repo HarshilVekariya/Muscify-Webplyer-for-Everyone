@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./assets/logo.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <title>Hot Hit</title>
+    <style>
+        body {
+            font-family: 'Montserrat', sans-serif;
+            background-color: black;
+            color: white;
+        }
+
+        .logo {
+            position: sticky;
+            top: 1px;
+            background-color: #121212;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            z-index: 10;
+        }
+
+        .logo a {
+            margin-left: 5px;
+            display: flex;
+            align-items: center;
+            padding: 0%;
+        }
+
+        .logo h3 {
+            padding-left: 14px;
+            cursor: context-menu;
+        }
+
+        a {
+            text-decoration: none;
+            color: #fff;
+        }
+
+        .play {
+            text-align: center;
+            width: 65px;
+            padding: 5px;
+            background-color: white;
+            color: black;
+            opacity: 0.7;
+            cursor: context-menu;
+            border-radius: 8px;
+            border: 1px solid;
+            transition: opacity 0.3s ease;
+        }
+
+        .play:hover {
+            opacity: 1;
+            transition: opacity 0.3s ease;
+        }
+
+        .header {
+            text-align: center;
+        }
+
+        h1 {
+            color: white;
+        }
+
+        .card-container {
+            display: flex;
+            flex-wrap: wrap;
+            cursor: context-menu;
+            justify-content: center;
+        }
+
+        .card-img {
+            width: 100%;
+            border-radius: 0.5rem;
+        }
+
+        .card-title {
+            font-weight: 600;
+        }
+
+        .card-info {
+            font-size: 0.75rem;
+            opacity: 0.8;
+        }
+
+        .card {
+            background-color: #232323;
+            width: 180px;
+            border-radius: 0.5rem;
+            padding: 0.6rem;
+            margin-left: 2.5rem;
+            margin-right:2.5rem;
+            margin-top: 1.5rem;
+            border-color: #232323;
+            align-items: center;
+            opacity: 0.6;
+            transition: all 0.3s ease;
+        }
+
+        .card:hover {
+            transform: scale(1.05);
+            transition: all 0.3s ease;
+            opacity: 1;
+        }
+
+        .a {
+            display: flex;
+            justify-content: flex-end;
+            margin-right: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="logo">
+        <a href="index.html"><img src="./assets/logo.png" alt="" height="40px" width="40px">
+            <h3>Muscify</h3>
+        </a>
+        <a href="index.html" class="a">
+            <div class="play">Play all</div>
+        </a>
+    </div>
+    <div class="header">
+        <h1 id="trend">Hot Hit Songs</h1>
+    </div>
+    <div class="card-container">
+        <div class="card">
+            <img src="hot_hit/aankh mare.jpeg" alt="" class="card-img" height="132px">
+            <p class="card-title">Aankh Marey</p>
+            <p class="card-info">(Simmba)<br>Kumar Sanu, Neha Kakkar, Tanishk Bagchi, Mika Singh</p>
+        </div>
+        <div class="card">
+            <img src="hot_hit/akh lad jave.jpeg" alt="" class="card-img"  height="132px">
+            <p class="card-title">Akh Lad Jaave</p>
+            <p class="card-info">(Love Yatri)<br>Badshah, Asees Kaur, Jubin Nautiyal, Tanishk Bagchi</p>
+        </div>
+        <div class="card">
+            <img src="hot_hit/chogada.jpeg" alt="" class="card-img" height="132px">
+            <p class="card-title">Chogada Tara</p>
+            <p class="card-info">(Love Yatri)<br>Darshan Raval, Asees Kaur</p>
+        </div>
+        <div class="card">
+            <img src="hot_hit/dil galti kar bertha he.jpeg" alt="" class="card-img" height="132px">
+            <p class="card-title">Dil Galti Kar Betha Hai</p>
+            <p class="card-info">Jubin Nautiyal<br>2021</p>
+        </div>
+        <div class="card">
+            <img src="hot_hit/dil se dil tak.jpeg" alt="" class="card-img" height="132px">
+            <p class="card-title">Dil Se Dil Tak</p>
+            <p class="card-info">(Bawaal)<br>Akashdeep Sengupta, Laqshay Kapoor, and Suvarna Tiwari</p>
+        </div>
+        <div class="card">
+            <img src="hot_hit/halka halka.jpeg" alt="" class="card-img" height="132px">
+            <p class="card-title">Halka Halka</p>
+            <p class="card-info">(Fanney Khan)<br>Divya Kumar and Sunidhi Chauhan</p>
+        </div>
+        
+        <div class="card">
+            <img src="hot_hit/tumse.jpeg" alt="" class="card-img" height="132px">
+            <p class="card-title">Tum Se</p>
+            <p class="card-info">(Teri Baaton Mein Aisa Uljha Jiya)<br>Raghav Chaitanya, Sachin–Jigar, and Varun Jain</p>
+        </div>
+        <div class="card">
+            <img src="hot_hit/twist kamariya.jpeg" alt="" class="card-img" height="132px">
+            <p class="card-title">Twist Kamariya</p>
+            <p class="card-info">(Bareilly Ki Barfi)<br>Altamash Faridi, Harshdeep Kaur, and Tanishk Bagchi</p>
+        </div>
+    </div>
+</body>
+
+</html>

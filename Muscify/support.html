@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Support</title>
+    <link rel="icon" href="./assets/logo.png">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #000000;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            width: 50%;
+            margin: 50px auto;
+            background: #5f63605d;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            animation: fadeIn 0.5s ease-in-out;
+
+        }
+
+        h1 {
+            text-align: center;
+            color: white;
+        }
+
+        h2 {
+            color: #5cb85c;
+            margin-top: 20px;
+        }
+
+        .form-group {
+            margin-bottom: 15px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+            color: white;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+
+        button {
+            width: 100%;
+            padding: 10px;
+            background-color: #254e01;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+        
+        button:hover {
+            background-color: #308300;
+        }
+        .p{
+            color: white;
+        }
+        .faq {
+            background-color: #e9ecef;
+            padding: 10px;
+            margin: 10px 0;
+            border-radius: 4px;
+        }
+
+        .faq h3 {
+            margin: 0;
+        }
+
+        .faq p {
+            margin: 5px 0 0;
+        }
+        .sub{
+            text-decoration: none;
+            color: white;
+        }
+        .logo{
+            display: flex;
+            color: white;
+            align-items: center;
+            padding:5px;
+        }
+        .logo h3{
+            padding-left: 8px;
+        }
+        .logo a{
+            text-decoration: none;
+            color: white;
+            display:flex;
+            align-items: center;
+        }
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(-50px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="logo"><a href="index.html"><img src="./assets/logo.png" height="40px"><h3>Muscify</h3></a></div>
+        <h1>Support</h1>
+        <p class="p">If you need assistance, please fill out the form below or check our FAQs.</p>
+
+        <h2>Contact Support</h2>
+        <form action="#" method="post">
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="issue">Issue:</label>
+                <textarea id="issue" name="issue" rows="4" required></textarea>
+            </div>
+            <button type="submit"><a href="index.html" class="sub">Submit</a></button>
+        </form>
+
+        <h2>Frequently Asked Questions (FAQs)</h2>
+        <div class="faq">
+            <h3>1. How can I reset my password?</h3>
+            <p>You can reset your password by clicking on the "Forgot Password" link on the login page.</p>
+        </div>
+        <div class="faq">
+            <h3>2. How do I contact customer support?</h3>
+            <p>You can contact customer support by filling out the form above or emailing us at
+                harshilvekariya94@gamil.com or contact on +917383976321.</p>
+        </div>
+        <div class="faq">
+            <h3>3. Where can I find the user manual?</h3>
+            <p>The user manual can be found in the "Help" section of our website.</p>
+        </div>
+    </div>
+</body>
+
+</html>
